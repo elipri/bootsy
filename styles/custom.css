@@ -59,14 +59,10 @@ footer {
     position: relative;
   }
 
-/*.carousel-item {
-    height: 300px;
-}
+.lnr-magnifier {
+    color: white;
+  }
 
-.caoursel-item img {
-    position: absolute;
-    object-fit: cover;
-    top:0;
-    left:0;
-    min-height: 300px;
-}*/
+  .navbar-dark .navbar-nav .nav-link {
+    color: white;
+}

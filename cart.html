@@ -10,24 +10,26 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
         <!-- minu CSS -->
-        <link rel="stylesheet" href="custom.css">
+        <link rel="stylesheet" href="styles/custom.css">
     </head>
     <body>
         <!-- päis -->
         <header class="py-2">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12 my-3 text-center"><img src="logo2.png" width="50%"></div>              
+                    <div class="col-lg-12 my-3 text-center"><img src="img/logo2.png" width="50%"></div>              
                 </div>          
             </div>
         </header>
         <!-- navigatsioon -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark text-light shadow">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Avaleht</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meist.html">Meist</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Uued tooted</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vannitooted</a> 
@@ -83,7 +85,7 @@
                         <div class="mb-auto p-2"><h4>Ostukorvis on 1 toode</h4></div>    
                         <div class="mb-auto p-2 row">
                             <div class="col-lg-6">
-                                <img src="soap.png" width="100%">
+                                <img src="img/soap.png" width="100%">
                             </div>
                             <div class="col-lg-6">
                                 <p>15.99&#8364;</p>
@@ -101,22 +103,87 @@
                             <p>Tarne: <span class="text-primary">tasuta</span></p>
                             <p>Kokku: <span class="text-primary">15.99&#8364;</span></p>
                         </div>
-                        <div class="p-2 mx-auto">
+                        <!--<div class="p-2 mx-auto">
                             <a href="kinnitus.html" class="btn btn-dark btn-lg mb-3">Maksa</a>
-                        </div>
+                        </div>-->
                     </div>
                     <div class="col-lg-6">
                     <!-- TODO! --->
+                    <form>
+                        <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <label for="firstName">Eesnimi</label>
+                              <input id="firstname" type="text" class="form-control" placeholder="Eesnimi">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName">Perekonnanimi</label>
+                              <input id="lastname" type="text" class="form-control" placeholder="Perekonnanimi">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">E-post</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sisesta oma e-posti aadress">
+                          </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Aadress</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Kuuse tänav 12-34">
+                          </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputCity">Linn</label>
+                            <input type="text" class="form-control" id="inputCity">
+                          </div>
+                          <div class="form-group col-md-3">
+                            <label for="inputState">Maakond</label>
+                            <select id="inputState" class="form-control">
+                              <option selected>Vali...</option>
+                              <option>Harjumaa</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-3">
+                            <label for="inputZip">Postiindeks</label>
+                            <input type="text" class="form-control" id="inputZip">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Maksemeetod</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>Swedbank</option>
+                              <option>SEB</option>
+                              <option>LHV</option>
+                            </select>
+                          </div>
+                        <button type="submit" href="#" class="btn btn-dark btn-lg mb-3">Maksa</button>
+                      </form>
                     </div>           
                 </div>   
             </div>
         </section>
         <!-- jalus -->
-        <footer class="bg-light">
+        <footer class="bg-dark text-light">
             <div class="container-fluid">
                 <div class="row">
                     <!-- TODO! -->
-                    <div class="col-lg-12 text-center"><p>Footer</p></div>
+                    <div class="col-lg-6 text-center">
+                        <h5>Kontakt:</h5>
+                        Tel: <a  href="tel:+3725555555">(+372) 555 5555</a>
+                        <div class="w-100"></div>
+                        E-post: <a href="mailto:info@kaseke.ee">info@kaseke.ee</a>
+                        <p>Kuuse tänav 12-43, Tartu</p>
+                    </div>
+                    <div class="col-lg-6 text-center"> 
+                        <h5>Sotsiaalmeedia:</h5>
+                        <a href="http://www.facebook.com" target="_blank"><img src="img/facebook-3-32.png" alt="facebook" /></a>
+                        <a href="http://www.instagram.com" target="_blank"><img src="img/instagram-32.png" alt="instagram" /></a>
+                        <div class="w-100 pb-1"></div>
+                        <a href="http://www.youtube.com" target="_blank"><img src="img/youtube-6-32.png" alt="facebook" /></a>
+                        <a href="http://www.pinterest.com" target="_blank"><img src="img/pinterest-3-32.png" alt="instagram" /></a>
+                      </div>
+                    <div class="col-lg-12 p-3 text-center">
+                        <p>© 2021 OÜ Kaseke</p>
+                    </div>
                 </div>
             </div>
         </footer>       
