@@ -10,24 +10,26 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
         <!-- minu CSS -->
-        <link rel="stylesheet" href="custom.css">
+        <link rel="stylesheet" href="styles/custom.css">
     </head>
     <body>
         <!-- päis --->
         <header class="py-2">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12 my-3 text-center"><a href="index.html"><img src="logo2.png" width="50%"></a></div>              
+                    <div class="col-lg-12 my-3 text-center"><a href="index.html"><img src="img/logo2.png" width="50%"></a></div>              
                 </div>          
             </div>
         </header>
         <!-- navigatsioon -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light shadow">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Avaleht</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meist.html">Meist</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Uued tooted</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vannitooted</a> 
@@ -81,6 +83,14 @@
             </nav>  
         </section>
         <!-- jumbotron --->
+        <div class="jumbotron jumbotron-image text-light shadow">
+            <h1 class="display-4 jumbotron-image-inside">Tere tulemast!</h1>
+            <p class="lead jumbotron-image-inside">Kvaliteetsed kehahooldustooted igale maitsele.</p>
+            <hr>
+            <p class="lead jumbotron-image-inside">
+              <a class="btn btn-primary btn-lg" href="#" role="button">Loe edasi..</a>
+            </p>
+          </div>
         <!-- TODO! --->
         <!-- tooted --->
         <section>
@@ -88,7 +98,7 @@
                 <h2 class="h mb-3">TOP</h2>
                 <div class="row"> 
                     <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
+                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="img/soap.png" alt="" class="card-img-top"></a> 
                             <div class="card-body"> 
                                 <h5> <a href="#" class="text-dark">Toode 1</a></h5>
                                 <p class="text-muted card-text"> 15.99&#8364;</p> 
@@ -97,7 +107,7 @@
                         </div> 
                     </div> 
                     <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
+                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="img/soap.png" alt="" class="card-img-top"></a> 
                             <div class="card-body"> 
                                 <h5> <a href="#" class="text-dark">Toode 2</a></h5>
                                 <p class="text-muted card-text"> 12.99&#8364;</p> 
@@ -106,7 +116,7 @@
                         </div> 
                     </div> 
                     <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
+                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="img/soap.png" alt="" class="card-img-top"></a> 
                             <div class="card-body"> 
                                 <h5> <a href="#" class="text-dark">Toode 3</a></h5>
                                 <p class="text-muted card-text"> 9.99&#8364;</p> 
@@ -115,7 +125,7 @@
                         </div> 
                     </div> 
                     <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
+                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="img/soap.png" alt="" class="card-img-top"></a> 
                             <div class="card-body"> 
                                 <h5> <a href="#" class="text-dark">Toode 4</a></h5>
                                 <p class="text-muted card-text"> 18.99&#8364;</p> 
@@ -124,7 +134,7 @@
                         </div> 
                     </div> 
                     <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
+                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="img/soap.png" alt="" class="card-img-top"></a> 
                             <div class="card-body"> 
                                 <h5> <a href="#" class="text-dark">Toode 5</a></h5>
                                 <p class="text-muted card-text"> 1.99&#8364;</p> 
@@ -133,7 +143,7 @@
                         </div> 
                     </div>
                     <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
+                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="img/soap.png" alt="" class="card-img-top"></a> 
                             <div class="card-body"> 
                                 <h5> <a href="#" class="text-dark">Toode 6</a></h5>
                                 <p class="text-muted card-text"> 5.99&#8364;</p> 
@@ -145,11 +155,14 @@
             </div>
         </section>   
         <!-- jalus --->
-        <footer class="bg-light">
+        <footer class="bg-dark text-muted">
             <div class="container-fluid">
                 <div class="row">
                     <!-- TODO! --->
                     <div class="col-lg-12 text-center"><p>Jalus</p></div>
+                    <p class="mb-4">Kaseke OÜ</p>
+                    <p>Mäeselja tänav 5</p>
+                    <a href="#">Telefon</a>
                 </div>
             </div>
         </footer>       
